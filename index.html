@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="description"
+            content="My small project for Bending Spoons"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Future with Bending Spoons</title>
+
+        <link href="styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,500;1,500&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="mode-box">
+            <fieldset class="toggle-group" id="checkbox">
+                <label>
+                    <input
+                        type="radio"
+                        name="color-scheme"
+                        id="color-scheme-light"
+                        value="0"
+                    />
+                    Light
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="color-scheme"
+                        value="auto"
+                        id="color-scheme-auto"
+                        checked
+                    />
+                    Snow
+                </label>
+                <label>
+                    <input
+                        type="radio"
+                        name="color-scheme"
+                        id="color-scheme-dark"
+                        value="1"
+                    />
+                    Dark
+                </label>
+            </fieldset>
+        </div>
+        <section id="section">
+            <div class="gfg-box fade-in-text">
+                <div class="box">
+                    <h1 class="title">Hello, my name is Libor</h1>
+                </div>
+                <div class="box">
+                    <h2>About me</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="box">
+                    <h2>Motivation</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="box">
+                    <h2>CV</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+                <div class="box">
+                    <h2>About this page</h2>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="box"><button onclick="printPdf()">print</button></div>
+        <div id="snow-container"></div>
+    </body>
+    <script src="snow.js"></script>
+    <script src="printpdf.js"></script>
+</html>

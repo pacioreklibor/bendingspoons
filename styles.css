@@ -1,0 +1,227 @@
+/* .ibm-plex {
+    font-family: "IBM PLex mono", Calibri, Tahoma, sans-serif;
+    } */
+
+body {
+    --background-color: #fff;
+    --text-color: #222;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    color-scheme: light dark;
+    font-family: "IBM Plex mono", ui-sans-serif, system-ui, sans-serif;
+}
+
+.title {
+    text-align: center;
+}
+
+.gfg-box {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mode-box {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    height: 4%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 35px;
+    font-size: 30px;
+    max-width: 1080px;
+}
+
+.fade-in-text {
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    animation: fadeIn 5s;
+}
+
+.toggle-group {
+    border: 0;
+    inline-size: fit-content;
+    padding: 3px;
+}
+.toggle-group label {
+    border-radius: 21px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.5em 1em;
+    text-align: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+.toggle-group label:has(input:checked) {
+    background-color: #ccc;
+    color: #333;
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+:where(html) {
+    --darkmode: 0;
+    container-name: root;
+    container-type: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --darkmode: 1;
+    }
+}
+@media (prefers-color-scheme: light) {
+    html {
+        --darkmode: 0;
+    }
+}
+
+html:has(#color-scheme-light:checked) {
+    --darkmode: 0;
+}
+html:has(#color-scheme-dark:checked) {
+    --darkmode: 1;
+}
+
+@container root style(--darkmode: 1) {
+    body {
+        --background-color: hsl(228, 5%, 15%);
+        --text-color: hsl(228, 5%, 80%);
+    }
+}
+
+[data-sr] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+#snow-container {
+    z-index: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: opacity 500ms;
+    width: 100%;
+}
+
+.snow {
+    animation:
+        fall ease-in infinite,
+        sway ease-in-out infinite;
+    color: skyblue;
+    position: absolute;
+}
+
+footer {
+    background-color: #ffdfb9;
+    bottom: 0;
+    font-family: sans-serif;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer .heart {
+    color: #dc143c;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: 100vh;
+        opacity: 1;
+    }
+}
+
+@keyframes sway {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 50px;
+    }
+    50% {
+        margin-left: -50px;
+    }
+    75% {
+        margin-left: 50px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
