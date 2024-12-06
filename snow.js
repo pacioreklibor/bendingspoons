@@ -25,17 +25,19 @@ const getRandomStyles = () => {
   `;
 };
 
-const createSnow = (num) => {
-  document.getElementById("snowMain").appendChild(snowContainer);
-  for (let i = num; i > 0; i--) {
-    let snow = document.createElement("div");
-    snow.className = "snow";
-    snow.style.cssText = getRandomStyles();
-    snow.innerHTML = snowContent[random(3)];
-    snowContainer.append(snow);
-    snowContainer.style.opacity = "1";
+document.addEventListener("DOMContentLoaded", () => {
+  const createSnow = (num) => {
+    document.getElementById("snowMain").appendChild(snowContainer);
+    for (let i = num; i > 0; i--) {
+      let snow = document.createElement("div");
+      snow.className = "snow";
+      snow.style.cssText = getRandomStyles();
+      snow.innerHTML = snowContent[random(3)];
+      snowContainer.append(snow);
+      snowContainer.style.opacity = "1";
+    }
   }
-};
+});
 
 const removeSnow = () => {
   snowContainer.style.opacity = "0";
