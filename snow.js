@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       snowContainer.style.opacity = "1";
     }
   }
-});
+
 
 const removeSnow = () => {
   snowContainer.style.opacity = "0";
@@ -64,3 +64,5 @@ function myFunction() {
     removeSnow();
   }
 }
+
+});
