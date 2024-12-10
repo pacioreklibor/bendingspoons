@@ -9,6 +9,11 @@ body {
     color: var(--text-color);
     color-scheme: light dark;
     font-family: "IBM Plex mono", ui-sans-serif, system-ui, sans-serif;
+    height: auto;
+}
+
+li {
+    margin-bottom: 30px;
 }
 
 .title {
@@ -57,6 +62,7 @@ body {
     inline-size: fit-content;
     padding: 3px;
 }
+
 .toggle-group label {
     border-radius: 21px;
     cursor: pointer;
@@ -67,6 +73,7 @@ body {
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none;
 }
+
 .toggle-group label:has(input:checked) {
     background-color: #ccc;
     color: #333;
@@ -128,6 +135,7 @@ body {
         --darkmode: 1;
     }
 }
+
 @media (prefers-color-scheme: light) {
     html {
         --darkmode: 0;
@@ -137,6 +145,7 @@ body {
 html:has(#color-scheme-light:checked) {
     --darkmode: 0;
 }
+
 html:has(#color-scheme-dark:checked) {
     --darkmode: 1;
 }
@@ -169,9 +178,8 @@ html:has(#color-scheme-dark:checked) {
 }
 
 .snow {
-    animation:
-        fall ease-in infinite,
-        sway ease-in-out infinite;
+    animation: fall ease-in infinite,
+    sway ease-in-out infinite;
     color: skyblue;
     position: absolute;
 }
