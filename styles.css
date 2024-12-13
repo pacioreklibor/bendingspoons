@@ -6,6 +6,7 @@ body {
     --background-color: #fff;
     --text-color: #222;
     background-color: var(--background-color);
+    font-size: 20px;
     color: var(--text-color);
     color-scheme: light dark;
     font-family: "IBM Plex mono", ui-sans-serif, system-ui, sans-serif;
@@ -14,6 +15,14 @@ body {
 
 li {
     margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.cv-left {
+    text-align: left;
 }
 
 .title {
@@ -36,7 +45,7 @@ li {
     top: 0;
     display: flex;
     justify-content: right;
-    align-items: right;
+    align-items: center;
     height: 4%;
 }
 
@@ -46,8 +55,11 @@ li {
     justify-content: center;
     align-items: center;
     padding: 8px 35px;
-    font-size: 30px;
     max-width: 1080px;
+}
+
+.cv {
+    text-align: left;
 }
 
 .fade-in-text {
@@ -59,6 +71,7 @@ li {
 
 .toggle-group {
     border: 0;
+    font-size: 15px;
     inline-size: fit-content;
     padding: 3px;
 }
